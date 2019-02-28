@@ -9,19 +9,19 @@
       function createHolder(val) {
         return {
           _value : val, 
-            setValue : function (newVal) {
-                this._value = newVal;
-            },
-            getValue : function () {
-              return this._value;
-            }
+          setValue : function (newVal) {
+            this._value = newVal;
+          },
+          getValue : function () {
+            return this._value;
+          }
         };
       }
 
-     var obj = createHolder(5);
-     console.log(obj.getValue()); 
-     obj.setValue(2);
-     console.log(obj.getValue()); 
+      var obj = createHolder(5);
+      console.log(obj.getValue()); 
+      obj.setValue(2);
+      console.log(obj.getValue()); 
 
     </script>
   </body>  
