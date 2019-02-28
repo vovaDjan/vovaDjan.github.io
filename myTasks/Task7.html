@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Task 7</title>
+  </head>
+  <body>
+    <script>
+	  function createHolder(val) {
+        return {
+	      _value : val, 
+	        setValue : function (newVal) {
+	            this._value = newVal;
+		    },
+	        getValue : function () {
+	          return this._value;
+	          }
+        };
+      }
+	  
+	var obj = createHolder(5);
+    console.log(obj.getValue()); 
+    obj.setValue(2);
+    console.log(obj.getValue()); 
+    </script>
+  </body>  
+</html>

@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <input type="number" id="number" min="0" max="30"/>
+    <input type="button" onclick="draw()" value="Отправить"/>
+	
+    <div id="out"></div>
+	
+    <script>
+      function draw() {
+        document.getElementById('out').innerHTML = '';
+        var count = document.getElementById('number').value;
+        if (count <= 30 && count > 0) {
+          for (var i = 0; i < count; i++) {
+            createNewLineDiv(i);
+              if (count != 1) {
+                for (var j = 0; j < count; j++) {
+                  createDiv(i);
+                }
+               } else {
+                   createDiv(i);
+                 }
+          }
+        } else {
+      document.getElementById('out').innerHTML = 'Введите число от 0 до 30 ';
+          }
+       }
+
+      function createDiv(i) {
+        var div = document.createElement("div");
+        div.style.width = '50px';
+        div.style.height = '25px';
+        div.style.background = getRandomColor();
+	    div.style.margin = '6px';
+
+        document.getElementById('newLine' + i).appendChild(div);
+      }
+
+      function createNewLineDiv(i) {
+        var div = document.createElement('div');
+        div.id = 'newLine' + i;
+        div.style.display = 'inline-block';
+
+      document.getElementById('out').appendChild(div);
+      }
+
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </body>
+</html>
