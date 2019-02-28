@@ -6,7 +6,6 @@
   </head>
   <body>
     <script>
-
       function frame(arr, ch) {
         var width = 0;
         var st = '';
@@ -28,8 +27,8 @@
             while (arr[j].length == width ) {
               arr[j] = ch + ' ' + arr[j] + ch; 
             }
+          }
         }
-
 
         arr.push(st);
         arr.unshift(st);
