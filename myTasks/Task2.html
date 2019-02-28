@@ -17,13 +17,13 @@
         if (count <= 30 && count > 0) {
           for (var i = 0; i < count; i++) {
             createNewLineDiv(i);
-              if (count != 1) {
-                for (var j = 0; j < count; j++) {
-                  createDiv(i);
-                }
-              } else {
+            if (count != 1) {
+              for (var j = 0; j < count; j++) {
                 createDiv(i);
               }
+            } else {
+              createDiv(i);
+            }
           }
         } else {
           document.getElementById('out').innerHTML = 'Введите число от 0 до 30 ';
