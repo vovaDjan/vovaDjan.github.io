@@ -7,9 +7,9 @@
   <body>
     <input type="number" id="number" min="0" max="30"/>
     <input type="button" onclick="draw()" value="Отправить"/>
-	
+    
     <div id="out"></div>
-	
+
     <script>
       function draw() {
         document.getElementById('out').innerHTML = '';
@@ -35,7 +35,7 @@
         div.style.width = '50px';
         div.style.height = '25px';
         div.style.background = getRandomColor();
-	    div.style.margin = '6px';
+        div.style.margin = '6px';
 
         document.getElementById('newLine' + i).appendChild(div);
       }

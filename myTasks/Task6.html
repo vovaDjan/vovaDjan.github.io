@@ -15,32 +15,32 @@
             width = arr[i].length + 1;
           }
         }
-		
+
         for (var i = 0; i <= width + 2; i++) {
-	      st += ch;
-	    }
-   
+          st += ch;
+        }
+
         for (var j = 0; j < arr.length; j++) {
           for (var i = 0; i < arr[j].length; i++) {
-		
-	        while (arr[j].length < width) {	
+        
+            while (arr[j].length < width) { 
               arr[j] += ' ';
-	        }
-	          while (arr[j].length == width ) {
-	            arr[j] = ch + ' ' + arr[j] + ch; 
-	          }
-	      }
-	    }
-		
+            }
+              while (arr[j].length == width ) {
+                arr[j] = ch + ' ' + arr[j] + ch; 
+              }
+          }
+        }
+
         arr.push(st);
         arr.unshift(st);
-	 
-	    for (var v in arr) {
-	      console.log(arr[v]);
-	    }
+
+        for (var v in arr) {
+          console.log(arr[v]);
+        }
       }
-	  
-	  frame(['Create', 'a', 'frame'], '+');
+
+      frame(['Create', 'a', 'frame'], '+');
     </script>
   </body>
 </html>

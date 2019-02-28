@@ -7,21 +7,21 @@
   <body>
     <input type="text" id="txt">
     <input type="button" onclick="findShortWord()" value="отправить"><br><br>
-	
+
     <div id="result"></div>
-	
+
     <script>
       function count(str) {
-	    var strSplit = str.split(' ');
-	    var min = strSplit[0].length;
-		for (var i = 0; i < strSplit.length; i++) {
-		  if(strSplit[i].length < min){
-	        min = strSplit[i].length;
-		  }
+        var strSplit = str.split(' ');
+        var min = strSplit[0].length;
+        for (var i = 0; i < strSplit.length; i++) {
+          if(strSplit[i].length < min){
+            min = strSplit[i].length;
+          }
         }
         return min;
       }
-	  
+
       function findShortWord() {
         var e = document.getElementById('txt').value;
         var str = 'The shortest length of the word : ' + count(e);
