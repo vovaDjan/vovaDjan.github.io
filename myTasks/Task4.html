@@ -10,15 +10,16 @@
         var a = [];
         var num = 0;
 
-          for (var i = 0; i < (arr.length / size); i++) {
-            a[i] = [];
+        for (var i = 0; i < (arr.length / size); i++) {
+          a[i] = [];
           
-           for (var j = 0; j < size; num++, j++) {
-             a[i][j] = arr[num];
-           }
-          }
+            for (var j = 0; j < size; num++, j++) {
+              a[i][j] = arr[num];
+            }
+        }
         console.log(a);
       }
+
       getDimensionalArray([0, 1, 2, 3, 4, 5], 3);
     </script>
   </body>

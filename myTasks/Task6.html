@@ -22,15 +22,15 @@
 
         for (var j = 0; j < arr.length; j++) {
           for (var i = 0; i < arr[j].length; i++) {
-        
+
             while (arr[j].length < width) { 
               arr[j] += ' ';
             }
-              while (arr[j].length == width ) {
-                arr[j] = ch + ' ' + arr[j] + ch; 
-              }
+            while (arr[j].length == width ) {
+              arr[j] = ch + ' ' + arr[j] + ch; 
+            }
           }
-        }
+
 
         arr.push(st);
         arr.unshift(st);
@@ -40,7 +40,7 @@
         }
       }
 
-      frame(['Create', 'a', 'frame'], '+');
+       frame(['Create', 'a', 'frame'], '+');
     </script>
   </body>
 </html>

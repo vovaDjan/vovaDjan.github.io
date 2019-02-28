@@ -21,14 +21,14 @@
                 for (var j = 0; j < count; j++) {
                   createDiv(i);
                 }
-               } else {
-                   createDiv(i);
-                 }
+              } else {
+                  createDiv(i);
+                }
           }
         } else {
-      document.getElementById('out').innerHTML = 'Введите число от 0 до 30 ';
+            document.getElementById('out').innerHTML = 'Введите число от 0 до 30 ';
           }
-       }
+      }
 
       function createDiv(i) {
         var div = document.createElement("div");
@@ -45,7 +45,7 @@
         div.id = 'newLine' + i;
         div.style.display = 'inline-block';
 
-      document.getElementById('out').appendChild(div);
+        document.getElementById('out').appendChild(div);
       }
 
       function getRandomColor() {
